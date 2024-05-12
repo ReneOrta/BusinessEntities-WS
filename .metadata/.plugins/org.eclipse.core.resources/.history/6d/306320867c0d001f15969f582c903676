@@ -1,0 +1,15 @@
+package mx.edu.itcm.businessentities.dto;
+import java.io.Serializable;
+
+public class BusinessEntityDtoResponse extends BusinessEntityDto implements Serializable{
+	
+	private static final long serialVersionUID = 1L;
+	private int id;
+	
+	public BusinessEntityDtoResponse(String id) {
+		super(id);
+	}
+	
+	
+	
+}

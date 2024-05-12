@@ -1,0 +1,4 @@
+spring.datasource.url= jdbc:sqlserver://127.0.0.1;databaseName=AdventureWorks2022;encrypt=false
+spring.datasource.username=sa
+spring.datasource.password=sasa
+server.port=8081

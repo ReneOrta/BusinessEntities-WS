@@ -1,0 +1,82 @@
+package mx.edu.itcm.businessentities.service.serviceImpl;
+
+import java.util.List;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import mx.edu.itcm.businessentities.dto.PersonDto;
+import mx.edu.itcm.businessentities.dto.PersonDtoResponse;
+import mx.edu.itcm.businessentities.dto.VendorDtoResponse;
+import mx.edu.itcm.businessentities.entity.Person;
+import mx.edu.itcm.businessentities.entity.Vendor;
+import mx.edu.itcm.businessentities.repository.BusinessEntityRepository;
+import mx.edu.itcm.businessentities.repository.PersonRepository;
+import mx.edu.itcm.businessentities.service.PersonService;
+
+@Component
+public class PersonServiceImpl implements  PersonService {
+	
+	BusinessEntityRepository businesEntityRepository;
+	
+	@Autowired
+	PersonRepository personRepository;
+	
+	@Autowired
+	ModelMapper modelMapper;
+	
+	@Override
+	public PersonDtoResponse create(PersonDto personDto) throws Exception {
+		try {
+			Person person=modelMapper.map(personDto,Person.class);
+			Integer be=businesEntityRepository.findById(person.getBusinessEntityID()).get().getBusinessEntityID();
+			person.setBusinessEntityID(be);
+			System.out.println("Creating: "+person.toString());
+			Person newPerson=personRepository.save(person);
+			return modelMapper.map(newPerson, PersonDtoResponse.class);
+		}catch(Exception e) {
+			throw e;
+		}
+	}
+
+	@Override
+	public PersonDtoResponse findOneById(int businessEntityID) {
+		return modelMapper.map(personRepository, PersonDtoResponse.class);
+	}
+
+	@Override
+	public PersonDtoResponse finOneByFrsName(String personFrsName) {
+		return modelMapper.map(personRepository.finOneByFrsName(personFrsName), PersonDtoResponse.class);
+	}
+
+	@Override
+	public PersonDtoResponse finOneByLsName(String personLsName) {
+		return modelMapper.map(personRepository.finOneByLsName(personLsName), PersonDtoResponse.class);
+	}
+
+	@Override
+	public PersonDtoResponse findOneByPerType(String personType) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public PersonDtoResponse save(PersonDto newPerson) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<PersonDtoResponse> getAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public PersonDtoResponse update(PersonDtoResponse newPerson) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

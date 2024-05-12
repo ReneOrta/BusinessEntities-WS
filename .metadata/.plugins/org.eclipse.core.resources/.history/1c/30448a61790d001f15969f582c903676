@@ -1,0 +1,35 @@
+package mx.edu.itcm.businessentities.dto;
+
+import java.io.Serializable;
+
+public class VendorDtoResponse extends PersonDto implements Serializable{
+	private static final long serialVersionUID = 1L;
+	private int BusinessEntityID;
+	
+	public VendorDtoResponse(String personType, String firstName, String lastName, PersonDtoResponse person,
+			int businessEntityID) {
+		super(personType, firstName, lastName, person);
+		BusinessEntityID = businessEntityID;
+	}
+
+	public VendorDtoResponse() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public int getBusinessEntityID() {
+		return BusinessEntityID;
+	}
+
+	public void setBusinessEntityID(int businessEntityID) {
+		BusinessEntityID = businessEntityID;
+	}
+
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
+	
+	
+	
+
+}

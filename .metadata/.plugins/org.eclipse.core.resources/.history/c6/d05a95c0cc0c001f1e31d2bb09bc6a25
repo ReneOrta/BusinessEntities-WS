@@ -1,0 +1,5 @@
+package mx.edu.itcm.businessentities.service;
+
+public class BusinessEntityService {
+
+}

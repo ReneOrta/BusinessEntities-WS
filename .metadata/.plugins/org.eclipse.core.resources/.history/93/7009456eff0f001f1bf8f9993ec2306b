@@ -1,0 +1,5 @@
+package mx.edu.itcm.businessentities.entity;
+
+public class Person {
+
+}

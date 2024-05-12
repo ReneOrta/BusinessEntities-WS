@@ -1,0 +1,15 @@
+package mx.edu.itcm.businessentities.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import mx.edu.itcm.businessentities.entity.BusinessEntity;
+import mx.edu.itcm.businessentities.entity.Vendor;
+
+
+@Repository
+public interface VendorRepository extends JpaRepository<Vendor, BusinessEntity> {
+	Vendor findOneByBEId(int businessEntityID);
+	Vendor findOneByAccountNumber(String accountNumber);
+	Vendor findOneByName(String name);
+}

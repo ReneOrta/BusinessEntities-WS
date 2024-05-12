@@ -1,0 +1,26 @@
+package mx.edu.itcm.businessentities.dto;
+
+import java.io.Serializable;
+
+public class StoreDtoResponse extends StoreDto implements Serializable{
+	private static final long serialVersionUID = 1L;
+	
+	private int businessEntityID;
+
+	public StoreDtoResponse(Integer BusinessEntityID,String Name) {
+		super(BusinessEntityID,Name);
+		this.BusinessEntityID=BusinessEntityID;
+	}
+	
+	public StoreDtoResponse() {
+		super();
+		
+	}
+
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
+	
+	
+	
+}

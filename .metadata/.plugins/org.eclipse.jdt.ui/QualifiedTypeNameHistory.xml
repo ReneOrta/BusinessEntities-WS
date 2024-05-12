@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="mx.edu.itcm.businessentities.repository.BusinessEntityRepository"/>
+    <fullyQualifiedTypeName name="mx.edu.itcm.businessentities.entity.BusinessEntity"/>
+    <fullyQualifiedTypeName name="mx.edu.itcm.businessentities.service.BusinessEntityService"/>
+    <fullyQualifiedTypeName name="mx.edu.itcm.businessentities.dto.BusinessEntityDto"/>
+    <fullyQualifiedTypeName name="mx.edu.itcm.businessentities.entity.Vendor"/>
+    <fullyQualifiedTypeName name="mx.edu.itcm.businessentities.service.VendorService"/>
+</qualifiedTypeNameHistroy>
