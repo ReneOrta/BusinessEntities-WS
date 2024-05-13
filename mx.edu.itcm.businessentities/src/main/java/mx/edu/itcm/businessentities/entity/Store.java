@@ -10,35 +10,36 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.PrimaryKeyJoinColumn;
 import jakarta.persistence.Table;
 @Entity
-@Table
+@Table(name = "Store")
 public class Store implements Serializable{
 	
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	Integer BusinessEntityID;
+	Integer businessEntityID;
 	
-	@Column 
-	String Name;
+	@Column//(name = "Name") 
+	String name;
 	
 	public Store() {
-		this.Name="";
+		this.businessEntityID=0;
+		this.name="";
 	}
 
 	public Integer getBusinessEntityID() {
-		return BusinessEntityID;
+		return businessEntityID;
 	}
 
 	public void setBusinessEntityID(Integer businessEntityID) {
-		this.BusinessEntityID = businessEntityID;
+		this.businessEntityID = businessEntityID;
 	}
 
 	public String getName() {
-		return Name;
+		return name;
 	}
 
 	public void setName(String name) {
-		this.Name = name;
+		this.name = name;
 	}
 
 	public static long getSerialversionuid() {
@@ -47,7 +48,6 @@ public class Store implements Serializable{
 
 	@Override
 	public String toString() {
-		return "Store [BusinessEntityID=" + BusinessEntityID + ", Name=" + Name + "]";
+		return "Store [businessEntityID=" + businessEntityID + ", name=" + name + "]";
 	}
-
 }

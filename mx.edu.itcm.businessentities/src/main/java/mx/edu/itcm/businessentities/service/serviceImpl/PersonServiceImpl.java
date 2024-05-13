@@ -47,18 +47,18 @@ public class PersonServiceImpl implements  PersonService {
 	}
 
 	@Override
-	public PersonDtoResponse finOneByFrsName(String personFrsName) {
-		return modelMapper.map(personRepository.finOneByFrsName(personFrsName), PersonDtoResponse.class);
+	public PersonDtoResponse finOneByFirstName(String personFrsName) {
+		return modelMapper.map(personRepository.findOneByFirstName(personFrsName), PersonDtoResponse.class);
 	}
 
 	@Override
-	public PersonDtoResponse finOneByLsName(String personLsName) {
-		return modelMapper.map(personRepository.finOneByLsName(personLsName), PersonDtoResponse.class);
+	public PersonDtoResponse finOneByLastName(String personLsName) {
+		return modelMapper.map(personRepository.findOneByLastName(personLsName), PersonDtoResponse.class);
 	}
 
 	@Override
-	public PersonDtoResponse findOneByPerType(String personType) {
-		return modelMapper.map(personRepository.finOneByLsName(personType), PersonDtoResponse.class);
+	public PersonDtoResponse findOneByPersonType(String personType) {
+		return modelMapper.map(personRepository.findOneByLastName(personType), PersonDtoResponse.class);
 	}
 
 	@Override

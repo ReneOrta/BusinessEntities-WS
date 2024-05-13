@@ -4,26 +4,25 @@ import java.io.Serializable;
 
 public class StoreDto implements Serializable {
 	private static final long serialVersionUID = 1L;
-	protected String Name;
+	protected String name;
 	
 	
 	public StoreDto(String Name) {
 		super();
-		this.Name = Name;
+		this.name = Name;
 	}
 
 	public StoreDto() {
 		super();
-		this.Name="";
+		this.name="";
 	}
 
-
 	public String getName() {
-		return Name;
+		return name;
 	}
 
 	public void setName(String name) {
-		this.Name = name;
+		this.name = name;
 	}
 
 	public static long getSerialversionuid() {
@@ -32,10 +31,7 @@ public class StoreDto implements Serializable {
 
 	@Override
 	public String toString() {
-		return "StoreDto [Name=" + Name + "]";
+		return "StoreDto [name=" + name + "]";
 	}
-
-	
-	
 	
 }

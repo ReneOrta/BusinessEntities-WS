@@ -4,35 +4,35 @@ import java.io.Serializable;
 
 public class VendorDto implements Serializable{
 	private static final long serialVersionUID = 1L;
-	protected String AccountNumber;
-	protected String Name;
+	protected String accountNumber;
+	protected String name;
 	
 	public VendorDto(String accountNumber, String name) {
 		super();
-		this.AccountNumber = accountNumber;
-		this.Name = name;
+		this.accountNumber = accountNumber;
+		this.name = name;
 	}
 
 	public VendorDto() {
 		super();
-		this.AccountNumber = "";
-		this.Name = "";
+		this.accountNumber = "";
+		this.name = "";
 	}
 
 	public String getAccountNumber() {
-		return AccountNumber;
+		return accountNumber;
 	}
 
 	public void setAccountNumber(String accountNumber) {
-		this.AccountNumber = accountNumber;
+		this.accountNumber = accountNumber;
 	}
 
 	public String getName() {
-		return Name;
+		return name;
 	}
 
 	public void setName(String name) {
-		this.Name = name;
+		this.name = name;
 	}
 
 	public static long getSerialversionuid() {
@@ -41,8 +41,9 @@ public class VendorDto implements Serializable{
 
 	@Override
 	public String toString() {
-		return "VendorDto [AccountNumber=" + AccountNumber + ", Name=" + Name + "]";
+		return "VendorDto [accountNumber=" + accountNumber + ", name=" + name + "]";
 	}
 
+	
 
 }

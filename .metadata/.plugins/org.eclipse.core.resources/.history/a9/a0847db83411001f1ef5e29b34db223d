@@ -1,0 +1,12 @@
+package mx.edu.itcm.businessentities.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+import mx.edu.itcm.businessentities.entity.Person;
+@Repository
+public interface PersonRepository extends JpaRepository<Person, Integer>{
+	public Person findOneById(Integer businessEntityID);
+	public Person finOneByFirstName(String personFrsName);
+	public Person finOneByLastName(String personLsName);
+	public Person findOneByPerType(String personType);
+}

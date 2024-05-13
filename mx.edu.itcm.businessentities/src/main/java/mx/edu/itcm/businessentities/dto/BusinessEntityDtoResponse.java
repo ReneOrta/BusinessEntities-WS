@@ -4,11 +4,11 @@ import java.io.Serializable;
 public class BusinessEntityDtoResponse extends BusinessEntityDto implements Serializable{
 	
 	private static final long serialVersionUID = 1L;
-	private int BusinessEntityID;
+	private int businessEntityID;
 	
 	public BusinessEntityDtoResponse(int BusinessEntityID) {
 		super();
-		this.BusinessEntityID=BusinessEntityID;
+		this.businessEntityID=BusinessEntityID;
 	}
 
 	public BusinessEntityDtoResponse() {
@@ -16,16 +16,18 @@ public class BusinessEntityDtoResponse extends BusinessEntityDto implements Seri
 	}
 
 	public int getBusinessEntityID() {
-		return BusinessEntityID;
+		return businessEntityID;
 	}
 
 	public void setBusinessEntityID(int businessEntityID) {
-		this.BusinessEntityID = businessEntityID;
+		this.businessEntityID = businessEntityID;
 	}
 
 	@Override
 	public String toString() {
-		return "CategoryDtoResponse [BusinessEntityID=" + BusinessEntityID + "]";
+		return "BusinessEntityDtoResponse [businessEntityID=" + businessEntityID + "]";
 	}
+
+	
 	
 }

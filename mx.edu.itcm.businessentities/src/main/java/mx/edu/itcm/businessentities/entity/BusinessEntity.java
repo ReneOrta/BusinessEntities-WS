@@ -13,24 +13,24 @@ import jakarta.persistence.PrimaryKeyJoinColumn;
 import jakarta.persistence.Table;
 
 @Entity
-@Table
+@Table(name = "BusinessEntity")
 public class BusinessEntity implements Serializable{
 	private static final long serialVersionUID = 1L;
 
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int BusinessEntityID;
+    private int businessEntityID;
 	
 	public BusinessEntity() {
 		
 	}
 	
 	public int getBusinessEntityID() {
-		return BusinessEntityID;
+		return businessEntityID;
 	}
 
 	public void setBusinessEntityID(int businessEntityID) {
-		this.BusinessEntityID = businessEntityID;
+		this.businessEntityID = businessEntityID;
 	}
 
 	public static long getSerialversionuid() {
@@ -39,7 +39,7 @@ public class BusinessEntity implements Serializable{
 
 	@Override
 	public String toString() {
-		return "BusinessEntityAddress [BusinessEntityID=" + BusinessEntityID + "]";
+		return "BusinessEntityAddress [BusinessEntityID=" + businessEntityID + "]";
 	}
 	
 }

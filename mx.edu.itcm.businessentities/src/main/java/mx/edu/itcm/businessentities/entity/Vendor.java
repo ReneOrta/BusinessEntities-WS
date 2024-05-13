@@ -6,58 +6,68 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table
+@Table(name = "Vendor")
 public class Vendor {
 
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	Integer BusinessEntityID;
+	Integer businessEntityID;
 	
-	@Column
-	String AccountNumber;
+	@Column//(name = "AccountNumber")
+	String accountNumber;
 	
-	@Column 
-	String Name;
+	@Column//(name = "Name") 
+	String name;
 
-	public Vendor() {
-		AccountNumber = "";
-		Name = "";
-	}
+	
 
 	public Integer getBusinessEntityID() {
-		return BusinessEntityID;
+		return businessEntityID;
 	}
+
+
 
 	public void setBusinessEntityID(Integer businessEntityID) {
-		this.BusinessEntityID = businessEntityID;
+		this.businessEntityID = businessEntityID;
 	}
+
+
 
 	public String getAccountNumber() {
-		return AccountNumber;
+		return accountNumber;
 	}
+
+
 
 	public void setAccountNumber(String accountNumber) {
-		this.AccountNumber = accountNumber;
+		this.accountNumber = accountNumber;
 	}
+
+
 
 	public String getName() {
-		return Name;
+		return name;
 	}
 
+
+
 	public void setName(String name) {
-		this.Name = name;
+		this.name = name;
 	}
+
+
 
 	public static long getSerialversionuid() {
 		return serialVersionUID;
 	}
 
+
+
 	@Override
 	public String toString() {
-		return "Vendor [BusinessEntityID=" + BusinessEntityID + ", AccountNumber=" + AccountNumber + ", Name=" + Name
+		return "Vendor [businessEntityID=" + businessEntityID + ", accountNumber=" + accountNumber + ", name=" + name
 				+ "]";
 	}
-	
 	
 }

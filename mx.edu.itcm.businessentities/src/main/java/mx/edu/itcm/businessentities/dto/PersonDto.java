@@ -4,49 +4,54 @@ import java.io.Serializable;
 
 public class PersonDto implements Serializable {
 	private static final long serialVersionUID = 1L;
-	protected String PersonType;
-	protected String FirstName;
-	protected  String LastName;
+	protected String personType;
+	protected String firstName;
+	protected  String lastName;
 	
 	public PersonDto(String personType, String firstName, String lastName) {
 		super();
-		this.PersonType = personType;
-		this.FirstName = firstName;
-		this.LastName = lastName;
+		this.personType = personType;
+		this.firstName = firstName;
+		this.lastName = lastName;
 	}
 	
 	public PersonDto() {
 		super();
-		this.PersonType="";
-		this.FirstName="";
-		this.LastName="";
+		this.personType="";
+		this.firstName="";
+		this.lastName="";
 	}
 
 	public String getPersonType() {
-		return PersonType;
+		return personType;
 	}
+
 	public void setPersonType(String personType) {
-		this.PersonType = personType;
+		this.personType = personType;
 	}
+
 	public String getFirstName() {
-		return FirstName;
+		return firstName;
 	}
+
 	public void setFirstName(String firstName) {
-		this.FirstName = firstName;
+		this.firstName = firstName;
 	}
+
 	public String getLastName() {
-		return LastName;
+		return lastName;
 	}
+
 	public void setLastName(String lastName) {
-		this.LastName = lastName;
+		this.lastName = lastName;
 	}
 
 	public static long getSerialversionuid() {
 		return serialVersionUID;
 	}
+
 	@Override
 	public String toString() {
-		return "PersonDto [PersonType=" + PersonType + ", FirstName=" + FirstName + ", LastName=" + LastName+ "]";
+		return "PersonDto [personType=" + personType + ", firstName=" + firstName + ", lastName=" + lastName + "]";
 	}
-
 }
