@@ -6,7 +6,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "Vendor")
+@Table(schema = "Purchasing",name = "Vendor")
 public class Vendor {
 
 	private static final long serialVersionUID = 1L;

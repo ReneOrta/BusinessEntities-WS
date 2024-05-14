@@ -14,7 +14,7 @@ public class Person implements Serializable{
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	Integer businessEntityID;
+	Integer BusinessEntityID;
 	
 	@Column//(name = "PersonType")
 	private String personType;
