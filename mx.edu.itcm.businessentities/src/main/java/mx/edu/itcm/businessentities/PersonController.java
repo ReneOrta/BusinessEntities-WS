@@ -50,17 +50,17 @@ public class PersonController {
 		return personService.getAll();
 	}
 	
-	 @GetMapping("/person-frs-name")
+	 @GetMapping("/fname")
 		public PersonDtoResponse getPersonByFirstName(@RequestParam String personFsNm) {
 			return personService.finOneByFirstName(personFsNm);
 		}
 	 
-	 @GetMapping("/person-lst-name")
+	 @GetMapping("/lname")
 		public PersonDtoResponse getPersonByLastName(@RequestParam String personLstNm) {
 			return personService.finOneByLastName(personLstNm);
 		}
 	 
-	 @GetMapping("/person-type")
+	 @GetMapping("/ptype")
 		public PersonDtoResponse getPersonByTyper(@RequestParam String personType) {
 			return personService.findOneByPersonType(personType);
 		}

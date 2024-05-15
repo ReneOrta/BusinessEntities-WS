@@ -13,11 +13,12 @@ import jakarta.persistence.PrimaryKeyJoinColumn;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(schema = "Person",name = "BusinessEntity")
+@Table(schema = "person",name = "businessentity")
 public class BusinessEntity implements Serializable{
 	private static final long serialVersionUID = 1L;
 
 	@Id
+	@Column(name = "businessentityid")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int businessEntityID;
 	

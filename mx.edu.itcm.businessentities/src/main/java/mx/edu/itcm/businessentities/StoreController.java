@@ -63,7 +63,7 @@ public class StoreController {
 		 }
 		}
 	
-	 @GetMapping("/store-name")
+	 @GetMapping("/name")
 		public StoreDtoResponse getStore(@RequestParam String storeName) {
 			return storeService.findOneByName(storeName);
 		}//*/

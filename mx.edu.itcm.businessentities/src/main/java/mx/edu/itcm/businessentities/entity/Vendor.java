@@ -12,9 +12,10 @@ public class Vendor {
 	private static final long serialVersionUID = 1L;
 
 	@Id
+	@Column(name = "businessentityid")
 	Integer businessEntityID;
 	
-	@Column//(name = "AccountNumber")
+	@Column(name = "accountnumber")
 	String accountNumber;
 	
 	@Column//(name = "Name") 

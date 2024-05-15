@@ -40,8 +40,14 @@ public class StoreServiceImpl implements StoreService {
 
 	@Override
 	public StoreDtoResponse findOneById(int businessEntityID) {
-		
+		try {
 		return modelMapper.map(storeRepository.findById(businessEntityID), StoreDtoResponse.class);
+		}
+		catch(Exception e){
+			System.out.println(e.toString());
+			e.printStackTrace();
+			return null;
+		}
 	}
 
 	@Override

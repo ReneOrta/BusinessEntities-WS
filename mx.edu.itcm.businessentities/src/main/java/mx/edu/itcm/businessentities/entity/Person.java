@@ -14,15 +14,16 @@ public class Person implements Serializable{
 	private static final long serialVersionUID = 1L;
 
 	@Id
+	@Column(name = "businessentityid")
 	Integer businessEntityID;
 	
-	@Column//(name = "PersonType")
+	@Column(name = "persontype")
 	private String personType;
 	
-	@Column//(name = "FirstName")
+	@Column(name = "firstname")
 	private String firstName;
 	
-	@Column//(name = "LastName")
+	@Column(name = "lastname")
 	private String lastName;
 	
 	public Person() {

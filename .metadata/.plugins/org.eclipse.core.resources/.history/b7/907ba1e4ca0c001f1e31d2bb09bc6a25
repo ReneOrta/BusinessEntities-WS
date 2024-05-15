@@ -1,5 +1,0 @@
-package mx.edu.itcm.businessentities.repository;
-
-public class PersonRepository {
-
-}
