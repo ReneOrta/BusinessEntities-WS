@@ -34,7 +34,8 @@ public class StoreController {
 		 try {
 			 return storeService.create(newStore);
 		 }catch(Exception e) {
-			 throw new ResponseStatusException(
+			 System.out.println(e.toString());
+			 throw new ResponseStatusException( 
 			          HttpStatus.BAD_REQUEST, "No pudo registrarse la tienda debido a información incorrecta", e);
 		 }
 	 }
@@ -64,7 +65,7 @@ public class StoreController {
 		}
 	
 	 @GetMapping("/name")
-		public StoreDtoResponse getStore(@RequestParam String storeName) {
+		public StoreDtoResponse getStoreName(@RequestParam String storeName) {
 			return storeService.findOneByName(storeName);
 		}//*/
 	 

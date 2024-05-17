@@ -12,10 +12,10 @@ import mx.edu.itcm.businessentities.entity.Store;
 import mx.edu.itcm.businessentities.repository.StoreRepository;
 import mx.edu.itcm.businessentities.repository.BusinessEntityRepository;
 import mx.edu.itcm.businessentities.service.StoreService;
-
+import mx.edu.itcm.businessentities.entity.*;;
 @Component
 public class StoreServiceImpl implements StoreService {
-
+	@Autowired
 	BusinessEntityRepository businesEntityRepository;
 
 	@Autowired
@@ -27,9 +27,11 @@ public class StoreServiceImpl implements StoreService {
 	@Override
 	public StoreDtoResponse create(StoreDto storeDto) throws Exception {
 		try {
+			BusinessEntity newbe = new BusinessEntity();
+			BusinessEntity be = businesEntityRepository.save(newbe);
 			Store store=modelMapper.map(storeDto,Store.class);
-			Integer be=businesEntityRepository.findById(store.getBusinessEntityID()).get().getBusinessEntityID();
-			store.setBusinessEntityID(be);
+			//Integer be=businesEntityRepository.findById(store.getBusinessEntityID()).get().getBusinessEntityID();
+			store.setBusinessEntityID(be.getBusinessEntityID());
 			System.out.println("Creating: "+store.toString());
 			Store newStore=storeRepository.save(store);
 			return modelMapper.map(newStore, StoreDtoResponse.class);
@@ -51,8 +53,8 @@ public class StoreServiceImpl implements StoreService {
 	}
 
 	@Override
-	public StoreDtoResponse findOneByName(String Name) {
-		return modelMapper.map(storeRepository.findOneByName(Name), StoreDtoResponse.class);
+	public StoreDtoResponse findOneByName(String name) {
+		return modelMapper.map(storeRepository.findOneByName(name), StoreDtoResponse.class);
 	}
 	
 	@Override

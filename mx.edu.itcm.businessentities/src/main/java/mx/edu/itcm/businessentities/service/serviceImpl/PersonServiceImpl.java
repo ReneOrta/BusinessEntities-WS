@@ -10,6 +10,7 @@ import org.springframework.stereotype.Component;
 import mx.edu.itcm.businessentities.dto.PersonDto;
 import mx.edu.itcm.businessentities.dto.PersonDtoResponse;
 import mx.edu.itcm.businessentities.dto.VendorDtoResponse;
+import mx.edu.itcm.businessentities.entity.BusinessEntity;
 import mx.edu.itcm.businessentities.entity.Person;
 import mx.edu.itcm.businessentities.entity.Vendor;
 import mx.edu.itcm.businessentities.repository.BusinessEntityRepository;
@@ -19,6 +20,7 @@ import mx.edu.itcm.businessentities.service.PersonService;
 @Component
 public class PersonServiceImpl implements  PersonService {
 	
+	@Autowired
 	BusinessEntityRepository businesEntityRepository;
 	
 	@Autowired
@@ -30,9 +32,11 @@ public class PersonServiceImpl implements  PersonService {
 	@Override
 	public PersonDtoResponse create(PersonDto personDto) throws Exception {
 		try {
+			BusinessEntity newbe = new BusinessEntity();
+			BusinessEntity be = businesEntityRepository.save(newbe);
 			Person person=modelMapper.map(personDto,Person.class);
-			Integer be=businesEntityRepository.findById(person.getBusinessEntityID()).get().getBusinessEntityID();
-			person.setBusinessEntityID(be);
+			//Integer be=businesEntityRepository.findById(person.getBusinessEntityID()).get().getBusinessEntityID();
+			person.setBusinessEntityID(be.getBusinessEntityID());
 			System.out.println("Creating: "+person.toString());
 			Person newPerson=personRepository.save(person);
 			return modelMapper.map(newPerson, PersonDtoResponse.class);

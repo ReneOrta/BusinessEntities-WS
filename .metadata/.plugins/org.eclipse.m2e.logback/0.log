@@ -1102,3 +1102,41 @@
 2024-05-14 10:31:53,861 [Worker-50: Launching business-entity-Application] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Usuario\Desktop\BusinessEntityWS\mx.edu.itcm.businessentities\src\test\resources
 2024-05-14 15:37:58,926 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
 2024-05-14 19:13:01,674 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-05-15 11:05:33,026 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-05-15 11:09:55,878 [Worker-4: Launching business-entity-Application] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-05-15 11:09:55,918 [Worker-4: Launching business-entity-Application] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-05-15 11:09:55,927 [Worker-4: Launching business-entity-Application] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Usuario\Desktop\BusinessEntityWS\mx.edu.itcm.businessentities\src\test\resources
+2024-05-16 00:18:38,897 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-05-16 21:34:48,437 [Worker-8: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-05-16 21:42:55,188 [Worker-13: Launching business-entity-Application] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-05-16 21:42:55,217 [Worker-13: Launching business-entity-Application] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-05-16 21:42:55,230 [Worker-13: Launching business-entity-Application] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Usuario\Desktop\BusinessEntityWS\mx.edu.itcm.businessentities\src\test\resources
+2024-05-16 21:45:58,079 [Worker-16: Launching business-entity-Application] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-05-16 21:45:58,084 [Worker-16: Launching business-entity-Application] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-05-16 21:45:58,089 [Worker-16: Launching business-entity-Application] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Usuario\Desktop\BusinessEntityWS\mx.edu.itcm.businessentities\src\test\resources
+2024-05-17 07:52:57,912 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-05-17 08:03:39,234 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-05-17 08:19:44,908 [Worker-6: Launching business-entity-Application] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-05-17 08:19:44,925 [Worker-6: Launching business-entity-Application] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-05-17 08:19:44,930 [Worker-6: Launching business-entity-Application] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Usuario\Desktop\BusinessEntityWS\mx.edu.itcm.businessentities\src\test\resources
+2024-05-17 08:25:54,854 [Worker-14: Launching business-entity-Application] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-05-17 08:25:54,860 [Worker-14: Launching business-entity-Application] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-05-17 08:25:54,866 [Worker-14: Launching business-entity-Application] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Usuario\Desktop\BusinessEntityWS\mx.edu.itcm.businessentities\src\test\resources
+2024-05-17 08:28:36,199 [Worker-19: Launching business-entity-Application] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-05-17 08:28:36,211 [Worker-19: Launching business-entity-Application] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-05-17 08:28:36,217 [Worker-19: Launching business-entity-Application] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Usuario\Desktop\BusinessEntityWS\mx.edu.itcm.businessentities\src\test\resources
+2024-05-17 08:52:18,289 [Worker-29: Launching business-entity-Application] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-05-17 08:52:18,301 [Worker-29: Launching business-entity-Application] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-05-17 08:52:18,309 [Worker-29: Launching business-entity-Application] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Usuario\Desktop\BusinessEntityWS\mx.edu.itcm.businessentities\src\test\resources
+2024-05-17 11:59:34,834 [Worker-40: Launching business-entity-Application] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-05-17 11:59:34,841 [Worker-40: Launching business-entity-Application] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-05-17 11:59:34,848 [Worker-40: Launching business-entity-Application] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Usuario\Desktop\BusinessEntityWS\mx.edu.itcm.businessentities\src\test\resources
+2024-05-17 12:03:07,564 [Worker-38: Launching business-entity-Application] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-05-17 12:03:07,570 [Worker-38: Launching business-entity-Application] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-05-17 12:03:07,574 [Worker-38: Launching business-entity-Application] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Usuario\Desktop\BusinessEntityWS\mx.edu.itcm.businessentities\src\test\resources
+2024-05-17 12:05:04,224 [Worker-42: Launching business-entity-Application] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-05-17 12:05:04,234 [Worker-42: Launching business-entity-Application] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-05-17 12:05:04,238 [Worker-42: Launching business-entity-Application] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Usuario\Desktop\BusinessEntityWS\mx.edu.itcm.businessentities\src\test\resources
+2024-05-17 12:09:36,354 [Worker-40: Launching business-entity-Application] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-05-17 12:09:36,362 [Worker-40: Launching business-entity-Application] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-05-17 12:09:36,368 [Worker-40: Launching business-entity-Application] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Usuario\Desktop\BusinessEntityWS\mx.edu.itcm.businessentities\src\test\resources

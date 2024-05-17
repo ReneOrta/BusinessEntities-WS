@@ -20,14 +20,20 @@ public class Vendor {
 	
 	@Column//(name = "Name") 
 	String name;
-
 	
+	@Column(name="creditrating")
+	Integer CreditRating;
+	
+	public Vendor() {
+		this.businessEntityID = 0;
+		this.accountNumber = "";
+		this.name = "";
+		this.CreditRating=4;//4 is for average
+	}
 
 	public Integer getBusinessEntityID() {
 		return businessEntityID;
 	}
-
-
 
 	public void setBusinessEntityID(Integer businessEntityID) {
 		this.businessEntityID = businessEntityID;
@@ -56,19 +62,29 @@ public class Vendor {
 	public void setName(String name) {
 		this.name = name;
 	}
+	
+	
+	
 
+	public Integer getCreditRating() {
+		return CreditRating;
+	}
 
+	public void setCreditRating(Integer creditRating) {
+		CreditRating = creditRating;
+	}
 
 	public static long getSerialversionuid() {
 		return serialVersionUID;
 	}
 
-
-
 	@Override
 	public String toString() {
 		return "Vendor [businessEntityID=" + businessEntityID + ", accountNumber=" + accountNumber + ", name=" + name
-				+ "]";
+				+ ", CreditRating=" + CreditRating + "]";
 	}
+
+
+
 	
 }

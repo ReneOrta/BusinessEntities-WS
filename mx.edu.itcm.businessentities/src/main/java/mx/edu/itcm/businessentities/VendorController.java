@@ -28,6 +28,7 @@ public class VendorController {
 		 try {
 			 return vendorService.create(newVendor);
 		 }catch(Exception e) {
+			 System.out.println(e.toString());
 			 throw new ResponseStatusException(
 			          HttpStatus.BAD_REQUEST, "No pudo registrarse el proveedor debido a información incorrecta", e);
 		 }

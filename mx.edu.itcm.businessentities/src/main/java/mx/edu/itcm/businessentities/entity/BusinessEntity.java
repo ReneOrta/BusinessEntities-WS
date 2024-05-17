@@ -23,7 +23,7 @@ public class BusinessEntity implements Serializable{
     private int businessEntityID;
 	
 	public BusinessEntity() {
-		
+		this.businessEntityID=0;
 	}
 	
 	public int getBusinessEntityID() {
