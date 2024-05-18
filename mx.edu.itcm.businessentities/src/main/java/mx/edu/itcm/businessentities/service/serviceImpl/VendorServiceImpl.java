@@ -55,8 +55,18 @@ public class VendorServiceImpl implements VendorService{
 	}
 
 	@Override
-	public VendorDtoResponse findOneByName(String name) {
-		return modelMapper.map(vendorRepository.findOneByName(name),VendorDtoResponse.class);
+	public List<VendorDtoResponse> findByName(String name) {
+		try {
+	        List<Vendor> vendors = vendorRepository.findByName(name);
+	        List<VendorDtoResponse> vendorDtosResponse= new ArrayList<>();
+	        for(Vendor vendor:vendors) {
+			    VendorDtoResponse vendorDtoResponse = modelMapper.map(vendor, VendorDtoResponse.class);
+				vendorDtosResponse.add(vendorDtoResponse);
+			}
+			return vendorDtosResponse;
+			}catch(Exception e) {
+				throw e;
+			}
 	}
 
 	@Override

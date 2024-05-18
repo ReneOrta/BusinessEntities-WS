@@ -13,7 +13,7 @@ public interface VendorService {
 	public VendorDtoResponse create(VendorDto vendor)throws Exception;
 	public VendorDtoResponse findOneById(Integer id);
 	public VendorDtoResponse findOneByAccountNumber(String accNumber);
-	public VendorDtoResponse findOneByName(String name);
+	public List<VendorDtoResponse> findByName(String name);
 	public VendorDtoResponse save(VendorDto newVendor);
 	public List<VendorDtoResponse> getAll();
 	public VendorDtoResponse update(VendorDtoResponse newVendor);

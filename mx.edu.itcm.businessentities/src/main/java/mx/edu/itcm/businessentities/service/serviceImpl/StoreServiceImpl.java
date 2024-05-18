@@ -2,6 +2,8 @@ package mx.edu.itcm.businessentities.service.serviceImpl;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
+
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -53,9 +55,20 @@ public class StoreServiceImpl implements StoreService {
 	}
 
 	@Override
-	public StoreDtoResponse findOneByName(String name) {
-		return modelMapper.map(storeRepository.findOneByName(name), StoreDtoResponse.class);
-	}
+    public List<StoreDtoResponse> findByName(String name) {
+		try {
+        List<Store> stores = storeRepository.findByName(name);
+        List<StoreDtoResponse> storeDtosResponse= new ArrayList<>();
+        for(Store store:stores) {
+			StoreDtoResponse storeDtoResponse = modelMapper.map(store, StoreDtoResponse.class);
+			storeDtosResponse.add(storeDtoResponse);
+		}
+		return storeDtosResponse;
+		}catch(Exception e) {
+			throw e;
+		}
+    }
+
 	
 	@Override
 	public StoreDtoResponse save(StoreDto newStore) {

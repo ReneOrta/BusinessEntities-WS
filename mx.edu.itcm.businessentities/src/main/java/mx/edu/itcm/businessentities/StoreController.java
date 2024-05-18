@@ -65,8 +65,15 @@ public class StoreController {
 		}
 	
 	 @GetMapping("/name")
-		public StoreDtoResponse getStoreName(@RequestParam String storeName) {
-			return storeService.findOneByName(storeName);
+		public List<StoreDtoResponse> getStoreName(@RequestParam String storeName) {
+		 try {	
+			 return storeService.findByName(storeName);
+		 }catch(Exception e) {
+			 System.out.println(e.toString());
+			 e.printStackTrace();
+			 throw new ResponseStatusException(
+			          HttpStatus.BAD_REQUEST, "No se pudieron actualizar los datos de la tienda debido a información incorrecta", e);
+		 }
 		}//*/
 	 
 }

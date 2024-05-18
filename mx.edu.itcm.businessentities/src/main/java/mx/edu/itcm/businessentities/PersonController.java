@@ -51,17 +51,17 @@ public class PersonController {
 	}
 	
 	 @GetMapping("/fname")
-		public PersonDtoResponse getPersonByFirstName(@RequestParam String personFsNm) {
-			return personService.finOneByFirstName(personFsNm);
+	 public List <PersonDtoResponse> getPersonByFirstName(@RequestParam String personFsNm) {
+			return personService.findByFirstName(personFsNm);
 		}
 	 
 	 @GetMapping("/lname")
-		public PersonDtoResponse getPersonByLastName(@RequestParam String personLstNm) {
-			return personService.finOneByLastName(personLstNm);
+	 public List <PersonDtoResponse> getPersonByLastName(@RequestParam String personLstNm) {
+			return personService.findByLastName(personLstNm);
 		}
 	 
 	 @GetMapping("/ptype")
-		public PersonDtoResponse getPersonByTyper(@RequestParam String personType) {
-			return personService.findOneByPersonType(personType);
+	 public List <PersonDtoResponse> getPersonByTyper(@RequestParam String personType) {
+			return personService.findByPersonType(personType);
 		}
 }

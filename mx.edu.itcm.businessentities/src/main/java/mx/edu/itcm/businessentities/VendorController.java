@@ -56,8 +56,8 @@ public class VendorController {
 	 }
 	 
 	 @GetMapping("/vendor-name")
-		public VendorDtoResponse getVendorName(@RequestParam String vendorName) {
-			return vendorService.findOneByName(vendorName);
+		public List<VendorDtoResponse> getVendorName(@RequestParam String vendorName) {
+			return vendorService.findByName(vendorName);
 		}
 	
 }

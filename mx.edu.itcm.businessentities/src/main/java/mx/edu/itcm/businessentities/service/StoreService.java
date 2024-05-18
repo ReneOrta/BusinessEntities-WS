@@ -11,7 +11,7 @@ import mx.edu.itcm.businessentities.dto.StoreDtoResponse;
 public interface StoreService {
 	public StoreDtoResponse create (StoreDto store)throws Exception;
 	public StoreDtoResponse findOneById(int businessEntityID);
-	public StoreDtoResponse findOneByName(String Name);
+	public List<StoreDtoResponse> findByName(String name);
 	public StoreDtoResponse save(StoreDto newStore);
 	public List<StoreDtoResponse> getAll();
 	public StoreDtoResponse update(StoreDtoResponse newStore);

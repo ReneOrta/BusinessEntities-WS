@@ -9,9 +9,11 @@ import org.springframework.stereotype.Component;
 
 import mx.edu.itcm.businessentities.dto.PersonDto;
 import mx.edu.itcm.businessentities.dto.PersonDtoResponse;
+import mx.edu.itcm.businessentities.dto.StoreDtoResponse;
 import mx.edu.itcm.businessentities.dto.VendorDtoResponse;
 import mx.edu.itcm.businessentities.entity.BusinessEntity;
 import mx.edu.itcm.businessentities.entity.Person;
+import mx.edu.itcm.businessentities.entity.Store;
 import mx.edu.itcm.businessentities.entity.Vendor;
 import mx.edu.itcm.businessentities.repository.BusinessEntityRepository;
 import mx.edu.itcm.businessentities.repository.PersonRepository;
@@ -51,18 +53,48 @@ public class PersonServiceImpl implements  PersonService {
 	}
 
 	@Override
-	public PersonDtoResponse finOneByFirstName(String personFrsName) {
-		return modelMapper.map(personRepository.findOneByFirstName(personFrsName), PersonDtoResponse.class);
+	public List<PersonDtoResponse> findByFirstName(String personFrsName) {
+		try {
+	        List<Person> persons = personRepository.findByFirstName(personFrsName);
+	        List<PersonDtoResponse> personDtosResponse= new ArrayList<>();
+	        for(Person person:persons) {
+				PersonDtoResponse personDtoResponse = modelMapper.map(person, PersonDtoResponse.class);
+				personDtosResponse.add(personDtoResponse);
+			}
+			return personDtosResponse;
+			}catch(Exception e) {
+				throw e;
+			}
 	}
 
 	@Override
-	public PersonDtoResponse finOneByLastName(String personLsName) {
-		return modelMapper.map(personRepository.findOneByLastName(personLsName), PersonDtoResponse.class);
+	public List<PersonDtoResponse> findByLastName(String personLsName) {
+		try {
+	        List<Person> persons = personRepository.findByLastName(personLsName);
+	        List<PersonDtoResponse> personDtosResponse= new ArrayList<>();
+	        for(Person person:persons) {
+				PersonDtoResponse personDtoResponse = modelMapper.map(person, PersonDtoResponse.class);
+				personDtosResponse.add(personDtoResponse);
+			}
+			return personDtosResponse;
+			}catch(Exception e) {
+				throw e;
+			}
 	}
 
 	@Override
-	public PersonDtoResponse findOneByPersonType(String personType) {
-		return modelMapper.map(personRepository.findOneByLastName(personType), PersonDtoResponse.class);
+	public List<PersonDtoResponse> findByPersonType(String personType) {
+		try {
+	        List<Person> persons = personRepository.findByPersonType(personType);
+	        List<PersonDtoResponse> personDtosResponse= new ArrayList<>();
+	        for(Person person:persons) {
+				PersonDtoResponse personDtoResponse = modelMapper.map(person, PersonDtoResponse.class);
+				personDtosResponse.add(personDtoResponse);
+			}
+			return personDtosResponse;
+			}catch(Exception e) {
+				throw e;
+			}
 	}
 
 	@Override
