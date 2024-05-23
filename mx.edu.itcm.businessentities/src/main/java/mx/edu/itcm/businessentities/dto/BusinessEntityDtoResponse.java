@@ -27,7 +27,5 @@ public class BusinessEntityDtoResponse extends BusinessEntityDto implements Seri
 	public String toString() {
 		return "BusinessEntityDtoResponse [businessEntityID=" + businessEntityID + "]";
 	}
-
-	
 	
 }

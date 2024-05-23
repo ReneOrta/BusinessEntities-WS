@@ -44,6 +44,4 @@ public class VendorDto implements Serializable{
 		return "VendorDto [accountNumber=" + accountNumber + ", name=" + name + "]";
 	}
 
-	
-
 }

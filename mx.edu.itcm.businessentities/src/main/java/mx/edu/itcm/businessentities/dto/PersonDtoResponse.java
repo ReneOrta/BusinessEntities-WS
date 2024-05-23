@@ -7,9 +7,9 @@ public class PersonDtoResponse extends PersonDto implements Serializable {
 	private int businessEntityID;
 				
 	public PersonDtoResponse(String personType, String firstName, String lastName,
-			int businessEntityID) {
+			int id) {
 		super(personType, firstName, lastName);
-		businessEntityID = businessEntityID;
+		businessEntityID = id;
 	}
 
 	public PersonDtoResponse() {

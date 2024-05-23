@@ -27,7 +27,4 @@ public class VendorDtoResponse extends VendorDto implements Serializable{
 	public static long getSerialversionuid() {
 		return serialVersionUID;
 	}
-	
-	
-	
 }

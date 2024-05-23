@@ -1,4 +1,5 @@
 package mx.edu.itcm.businessentities.entity;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -37,23 +38,34 @@ public class Vendor {
 	public void setBusinessEntityID(Integer businessEntityID) {
 		this.businessEntityID = businessEntityID;
 	}
-	
+
+
+
 	public String getAccountNumber() {
 		return accountNumber;
 	}
-	
+
+
+
 	public void setAccountNumber(String accountNumber) {
 		this.accountNumber = accountNumber;
 	}
-	
+
+
+
 	public String getName() {
 		return name;
 	}
-	
+
+
+
 	public void setName(String name) {
 		this.name = name;
 	}
 	
+	
+	
+
 	public Integer getCreditRating() {
 		return CreditRating;
 	}
@@ -70,5 +82,9 @@ public class Vendor {
 	public String toString() {
 		return "Vendor [businessEntityID=" + businessEntityID + ", accountNumber=" + accountNumber + ", name=" + name
 				+ ", CreditRating=" + CreditRating + "]";
-	}	
+	}
+
+
+
+	
 }
